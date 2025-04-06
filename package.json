@@ -22,8 +22,6 @@
     "express": "^4.21.2",
     "file-saver": "^2.0.5",
     "flask": "^0.2.10",
-    "jspdf": "^1.4.0",
-    "jspdf-autotable": "^3.0.4",
     "lucide-react": "^0.483.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.13.0",
@@ -39,7 +37,6 @@
     "recharts": "^2.15.1",
     "socket.io": "^4.8.1",
     "socket.io-client": "^4.8.1",
-    "type": "module",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
