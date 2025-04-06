@@ -1,0 +1,179 @@
+/* ✅ Root Variables */
+:root {
+  --text-color: #ffffff;
+  --background-color: #fff;
+  --hover-color: #ff3333;
+  --modal-background: rgba(0, 0, 0, 0.11);
+}
+
+/* ✅ Full-Screen Background */
+.homeBg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+  /* ✅ Background Image */
+  background: url("../assets/mainbg.jfif") no-repeat center center/cover;
+  position: relative;
+}
+
+/* ✅ Dark Overlay for Opacity Control */
+.homeBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+/* ✅ Ensure Content is Above the Overlay */
+.homeBg > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ✅ Title & Text Styling */
+.homeBg > h1 {
+  color: var(--text-color);
+  font-size: clamp(2rem, 8vw, 4.8rem);
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.homeBg > p {
+  color: var(--text-color);
+  font-size: clamp(1rem, 4vw, 2rem);
+  text-align: center;
+  max-width: 80%;
+  margin: 20px 0;
+}
+
+/* ✅ Buttons Container */
+.containerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 5% auto;
+}
+
+/* ✅ Button Icons */
+.usericon {
+  width: 45px;
+}
+
+/* ✅ Button Text */
+.pstyle {
+  font-size: 15px;
+  font-family: Roboto;
+  color: rgb(255, 251, 245);
+}
+
+/* ✅ Buttons */
+.Storereg {
+  border: 1px solid rgba(0, 0, 0, 0.568);
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.99);
+  padding: 5px;
+  width: 350px;
+  background: rgba(33, 40, 48, 0.85); 
+  color: rgb(128, 128, 128);
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.25s ease-in, opacity 0.25s ease-in;
+}
+
+.Storereg:hover {
+  transform: scale(1.05);
+  background: rgba(32, 53, 73, 0.9);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+/* ✅ Modal Styling */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Close Button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: var(--hover-color);
+}
+
+/* ✅ RESPONSIVENESS */
+@media (max-width: 768px) {
+  .homeBg > h1 {
+      font-size: 2.5rem;
+  }
+
+  .homeBg > p {
+      font-size: 1.2rem;
+  }
+
+  .Storereg {
+      width: 80%;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeBg > h1 {
+      font-size: 2rem;
+  }
+
+  .homeBg > p {
+      font-size: 1rem;
+  }
+
+  .Storereg {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .usericon {
+      width: 80px;
+  }
+}

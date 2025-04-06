@@ -1,0 +1,153 @@
+/* ✅ Full-Page Background */
+.foundersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    width: 100%;
+    background: #10171f;
+    text-align: center;
+}
+
+/* ✅ Title */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 30px;
+    color: white;
+}
+
+/* ✅ Divider */
+.divider {
+    font-size: 1.5rem;
+    color: rgba(184, 184, 184, 0.849);
+    margin-bottom: 30px;
+}
+
+/* ✅ Introduction */
+.intro {
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/* ✅ Grid Layout for Founders */
+.foundersGrid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ✅ Individual Founder Box */
+.founder {
+    background: rgba(128, 128, 128, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+
+.founder:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Founder Name */
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9dd9ff;
+}
+
+/* ✅ Founder Bio */
+.bio {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    font-family: "PT Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ✅ Task List */
+.tasks {
+    text-align: left;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+}
+
+.tasks li {
+    font-size: 0.9rem;
+    padding: 5px 0;
+    list-style: none;
+    border-left: 4px solid #9dd9ff;
+    padding-left: 15px;
+}
+
+/* ✅ Subtitles */
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #9dd9ff;
+}
+
+/* ✅ Descriptions */
+.description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: "PT Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 900px) {
+    .foundersGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .foundersGrid {
+        flex-direction: column;
+    }
+
+    .founder {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .bio {
+        font-size: 1.1rem;
+    }
+}

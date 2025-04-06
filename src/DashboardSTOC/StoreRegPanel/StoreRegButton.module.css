@@ -1,0 +1,14 @@
+
+
+.storebtn {
+    background-color: rgba(4, 5, 8, 0.67);
+    border-radius: 30px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 12px;
+}

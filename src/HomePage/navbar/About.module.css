@@ -1,0 +1,97 @@
+.aboutContainer {
+    width: 100%;
+    padding: 50px 20px;
+    background: #10171f;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.divider {
+    font-size: 1.5rem;
+    color: #314255;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.7rem;
+    margin: 30px;
+    color: #9dd9ff;
+    text-align: center;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+    color: white;
+}
+
+.featuresList li {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-left: 4px solid #9dd9ff;
+    padding-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+    .aboutContainer {
+        padding: 30px 15px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .featuresList li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .featuresList li {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,110 @@
+/* Theme Variables */
+:root {
+  --bg-dark: #0d1117;
+  --border-dark: #1f2937;
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --text-light: #e5e7eb;
+  --live-bg: rgba(0, 0, 0, 0.7);
+  --red: red;
+}
+
+/* Live Feed Container */
+.Live {
+  background: var(--bg-dark);
+  border-radius: 12px;
+  border: 2px solid var(--border-dark);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 90%;
+  height: 80%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px auto;
+  overflow: hidden;
+}
+
+/* LIVE Indicator */
+.liveheader {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--live-bg);
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.plive {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-light);
+  margin-right: 10px;
+}
+
+/* Red Blinking Circle */
+.IconCircle {
+  width: 12px;
+  height: 12px;
+  background-color: var(--red);
+  border-radius: 50%;
+  animation: blink 1s ease-in-out infinite;
+}
+
+/* Blinking Animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Footer Section (Date & Time) */
+.Footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: var(--overlay-dark);
+}
+
+.pdate,
+.ptime {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .Live {
+    width: 95%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .plive, .pdate, .ptime {
+    font-size: 0.9rem;
+  }
+
+  .IconCircle {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Live {
+    max-width: 1000px;
+  }
+
+  .plive, .pdate, .ptime {
+    font-size: 1.2rem;
+  }
+
+  .IconCircle {
+    width: 14px;
+    height: 14px;
+  }
+}

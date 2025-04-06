@@ -1,0 +1,33 @@
+.MainBg{
+  margin-left: 20px;
+}
+
+.dashboardContainer {
+  display: grid;
+  grid-template-columns: 65% 35%; 
+  grid-template-rows: 100vh; 
+  width: 100%;
+  max-width: 1600px;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.dashboardContainer > * {
+  width: 100%;
+}
+
+.statusPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 900px) {
+  .dashboardContainer {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+}

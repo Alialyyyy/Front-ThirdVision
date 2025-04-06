@@ -1,0 +1,181 @@
+/* ✅ Modal Container */
+.container {
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    max-width: 500px;
+    width: 90%; /* ✅ Makes it more responsive */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    z-index: 1000;
+    background: linear-gradient(180deg, hsl(180, 16%, 52%), #062724);
+}
+
+/* ✅ Modal Overlay (Covers Full Screen) */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* ✅ Full width */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* ✅ Semi-transparent background */
+    z-index: 999; 
+}
+
+/* ✅ Title */
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ✅ Form Layout */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* ✅ Labels */
+.label {
+    font-size: 1rem;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: bold;
+}
+
+/* ✅ Inputs */
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* ✅ Password Input Wrapper */
+.passcodeWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ✅ Show/Hide Password Button */
+.toggleButton {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.toggleButton:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* ✅ Submit Button */
+.submitButton {
+    background: linear-gradient(90deg, #008a05, #003b03);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+    background: linear-gradient(90deg, #01d10c, #00f811);
+    color: rgb(235, 235, 235);
+}
+
+/* ✅ Close Button */
+.closeButton {
+    position: absolute; 
+    top: 10px; 
+    right: 15px;
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 22px;
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+}
+
+.closeButton:hover {
+    color: #ff0000;
+}
+
+/* ✅ Error Message */
+.error {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .submitButton {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .toggleButton {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .label {
+        font-size: 0.7rem;
+    }
+
+    .input {
+        font-size: 0.90rem;
+        padding: 6px;
+    }
+
+    .submitButton {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .closeButton {
+        font-size: 20px;
+    }
+
+    .toggleButton {
+        font-size: 0.8rem;
+    }
+}

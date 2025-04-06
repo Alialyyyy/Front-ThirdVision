@@ -1,0 +1,97 @@
+/* 🔴 Notification Panel Container */
+.notificationPanel {
+    width: 100%;
+    color: white;
+}
+
+/* 📢 Title */
+.notificationPanel h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #ad6801; 
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* 📌 Report Card */
+.repCardPanel {
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.521); 
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgb(70, 0, 0); 
+    margin-bottom: 10px;
+    text-align: left;
+    border-left: 8px solid #fffb00; 
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.repCardPanel h1{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    margin: none;
+}
+
+.repCardPanel h3{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin: none;
+    font-weight: bolder;
+}
+
+/* 📝 Report Details */
+.repCardPanel p {
+    font-size: 18px;
+    color: white;
+}
+
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+    .notificationPanel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notificationPanel h1 {
+        font-size: 14px;
+    }
+
+    .repCardPanel {
+        padding: 12px;
+    }
+
+    .repCardPanel p {
+        font-size: 12px;
+    }
+
+    .reportImage {
+        max-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .notificationPanel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notificationPanel h1 {
+        font-size: 14px;
+    }
+
+    .repCardPanel {
+        padding: 10px;
+    }
+
+    .repCardPanel p {
+        font-size: 8px;
+    }
+
+    .reportImage {
+        max-width: auto;
+    }
+}

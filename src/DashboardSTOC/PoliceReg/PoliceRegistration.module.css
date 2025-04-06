@@ -1,0 +1,120 @@
+
+
+.storebtn {
+    background-color: rgba(4, 5, 8, 0.67);
+    border-radius: 30px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 12px;
+}
+
+.storebtn:hover {
+    background-color: rgb(25, 42, 78);
+}
+
+.IconRegAcc {
+    width: 50px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.style {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px hsl(0, 82%, 2%);
+    padding: 15px;
+    max-width: 300px;
+    flex: 0 0 30%;
+    background: rgb(51, 66, 81);
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 2px;
+    transition: transform 0.2s ease-in-out;
+}
+
+h2 {
+    color: #000000a8;
+    margin: 10px;
+}
+
+.style:hover {
+    transform: none;
+}
+
+.floatingpanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floatingpanel input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.floatingpanel input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.submitbtn {
+    padding: 8px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buttons:hover {
+    background: #039c03;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.082); 
+    border: 1px solid #000; 
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff0000; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.closeButton:hover {
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}

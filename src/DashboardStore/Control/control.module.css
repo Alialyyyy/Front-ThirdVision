@@ -1,0 +1,95 @@
+/* Root Styles (Kept for Global Variables) */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ✅ Control Container */
+.control {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+  border-radius: 6px;
+  margin-bottom: 3px;
+  max-width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ Buttons */
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 10px;
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(14, 0, 141);
+  color: white;
+}
+
+.button:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ✅ Terminal Output Box */
+.terminal {
+  padding: 3px;
+  text-align: left;
+  border: 1px solid black;
+  height: 200px;
+  overflow-y: auto;
+  background-color: #000;
+  color: #0f0;
+  font-family: 'monospace';
+  white-space: pre-wrap;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ✅ Text Styles */
+.status {
+  font-size: 13px;
+  font-family: 'monospace';
+  color: rgb(112, 112, 112);
+}
+
+.terminalTitle {
+  font-size: 18px;
+  font-family: 'monospace';
+  color: rgb(102, 255, 0);
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .control {
+      width: 90%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      color: #213547;
+      background-color: #ffffff;
+  }
+}

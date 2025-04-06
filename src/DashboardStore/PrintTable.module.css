@@ -1,0 +1,81 @@
+
+
+.printButton {
+  border: 1px solid #ccc; 
+  font-size: 16px; 
+  padding: 10px 15px; 
+  margin-left: 10px; 
+  background-color: #007bff; 
+  color: white; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.printButton:hover {
+  background-color: #0056b3; 
+}
+
+.print-container {
+    width: 30px;
+    padding: 20px;
+    background: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .header-text {
+    text-align: right;
+  }
+  
+  h1, h2, h3 {
+    margin: 5px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background: #f4f4f4;
+  }
+  
+  @media print {
+    .print-container {
+      padding: 10px;
+    }
+    
+    .header-section {
+      page-break-before: always;
+    }
+  
+    table {
+      page-break-inside: avoid;
+    }
+  }
+  

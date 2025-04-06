@@ -1,0 +1,54 @@
+.RepCountPanel {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.chartsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.chartContainer {
+    flex: 1 1 500px;
+    height: 425px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.chartContainer:hover {
+    background-color: #f0f0f0;
+    transition: 0.3s ease-in-out;
+}
+
+.reportSummary p{
+    margin-top: 10px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #525252;
+}
+
+.reportSummary p1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #970000;
+}
+
+.reportSummary p1:hover{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f70303;
+    transition: 0.5s;
+}
+
+

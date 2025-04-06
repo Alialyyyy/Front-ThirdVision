@@ -1,0 +1,157 @@
+
+
+.title {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+    color: #000000a8;
+}
+
+.parentCont{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px hsl(0, 82%, 2%);
+    padding: 15px;
+    max-width: 300px;
+    flex: 0 0 30%;
+    background:rgb(51, 66, 81);
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 2px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.loading{
+    color: #00000059;
+}
+
+.parentCont:hover {
+    transform: none;
+}
+
+.IconRegistered{
+    border: none;
+    width: 50px;
+    height: auto;
+    margin-top: 5px;
+}
+
+
+.pstyle{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0; 
+    padding: 10px;
+    font-size: 20px;
+}
+
+.RegisteredButton{
+    background-color:rgba(4, 5, 8, 0.67);
+    border-radius: 30px;
+    padding:10px 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+
+/* Floating Panel */
+.floatingPanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    z-index: 9999;
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close button */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.closeButton:hover {
+    background: darkred;
+}
+
+/* Table Container */
+.tableContainer {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 0.05px solid #0000003a;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    color:rgb(0, 0, 0);
+}
+
+.table th {
+    background-color: #00000044;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.table thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.editButton, .deleteButton {
+    margin: 2px;
+    padding: 3px 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.editButton {
+    background-color: #027ea3;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #318ecc;
+}
+
+.deleteButton {
+    background-color: #b60000;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #ff1d04;
+}

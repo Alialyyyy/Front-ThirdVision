@@ -1,0 +1,50 @@
+.lowThreatContainer {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.521); 
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgb(70, 0, 0); 
+    margin-bottom: 10px;
+    text-align: left;
+    border-left: 8px solid #fffb00; 
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+}
+
+h1 {
+    color: #cc8800;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.threatBox {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.521); 
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgb(70, 0, 0); 
+    margin-bottom: 10px;
+    text-align: left;
+    border-left: 8px solid #ff0000; 
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.threatBox h2 {
+    color: #cc0000;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #242424;
+}
+
+.noThreat {
+    font-size: 1.2rem;
+    color: #228B22; 
+    font-weight: bold;
+}
